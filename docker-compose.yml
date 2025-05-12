@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:11.7.2
+    container_name: tarkov_wiki
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: tarkov_wiki
+      MYSQL_USER: frantaVomacka
+      MYSQL_PASSWORD: kekw
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+
+  php:
+    build: .  # Toto označuje, že Docker použije Dockerfile ve stejné složce
+    container_name: php
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mariadb
+
+volumes:
+  db_data:

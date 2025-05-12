@@ -1,0 +1,335 @@
+.theme {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  z-index: 100;
+}
+#pageMessages {
+  position: fixed;
+  top: 70px;
+  right: 15px;
+  width: 30%;
+  z-index: 100;
+}
+#carousel-slideshow {
+  margin: 0 3%;
+}
+.icon-color-green {
+  color: #4CAF50 !important;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icon-color-red {
+  color: #f44336 !important;
+  font-size: 25px;
+  cursor: pointer;
+}
+.icon-color-blue {
+  color: #00AFF0 !important;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+body{
+  background: url("../img/tarkov1.jpg") no-repeat fixed center center / cover;
+}
+
+.hero {
+  background: url("../img/tarkov1.jpg") no-repeat fixed center center / cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.header-top {
+  width: 100vw;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.3s;
+  padding: 20px 0 0;
+}
+.header-top #word-mark {
+  opacity: 0;
+}
+.header-top #brand,
+.header-top #menu,
+.header-top ul {
+  display: flex;
+  align-items: center;
+}
+.header-top #logo {
+  width: 55px;
+  height: 55px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header-top #brand {
+  padding-left: 40px;
+}
+.header-top #word-mark {
+  background: #fff;
+  border-radius: 90px;
+  margin-left: 20px;
+  opacity: 1;
+  transition: all 0.3s;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
+}
+.header-top #menu {
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+.header-top #menu li {
+  margin-left: 20px;
+  display: inline;
+}
+.header-top #menu li a,
+.header-top #menu li button {
+  background: #fff;
+  display: block;
+  border-radius: 90px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  border: none;
+}
+.header-top #menu li a:hover,
+.header-top #menu li button:hover {
+  background: #161616;
+  color: white;
+}
+.underline-text{
+  text-decoration: underline;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  margin:100px auto 20px;
+  height: fit-content;
+  width: 72%;
+  border-radius: 10px;
+  background-color: #161616;
+  padding: 10px 45px 50px;
+}
+
+.content {
+  margin: 0 20px 0;
+}
+
+.odstavec {
+  margin: 0 50px;
+
+}
+#imagebtn {
+  color: #ffffff;
+  padding: 150px;
+  border: dashed #6e6d6d;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+#submit {
+  color:black;
+}
+.custom-file-upload {
+  color: white;
+  padding: 150px;
+  border: dashed #6e6d6d;
+  border-radius: 40px;
+  margin-bottom: 20px;
+
+}
+.custom-file-upload:hover {
+  color: #acacac;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  padding: 10px 0 2px;
+}
+
+label:hover{
+  color: #acacac;
+}
+
+#description {
+  width: 80%;
+  min-height: 200px;
+
+}
+input[type="number"] {
+  width: 15%;
+  min-width: 200px;
+}
+input[type="text"] {
+  width: 30%;
+  min-width: 200px;
+}
+
+select {
+  margin: 50px;
+  width: 15%;
+  min-width: 200px;
+}
+.search-btn {
+  margin-top: 10px;
+  width: 70px;
+  height: 30px;
+  background: #161616;
+}
+.search-btn:hover {
+  background: #262626;
+}
+
+.dark-textarea {
+  padding: 10px 10px 0;
+  margin: 10px 0 10px;
+  border:solid 1px #848484;
+  background: black;
+  border-radius: 10px;
+  color: #dedede;
+  min-width: 200px;
+  width: 80%;
+  height: fit-content;
+  min-height: 200px;
+  text-align: start;
+}
+
+.description-segment {
+  margin: 20px 0;
+
+}
+.description-name {
+  font-size: 30px;
+
+}
+
+.line {
+  color: white;
+  margin:0 0 5px;
+}
+.bluehypertext{
+  color:dodgerblue;
+  text-decoration:underline;
+}
+.logo {
+  max-height: 70px;
+}
+
+.quest-name {
+  font-size: 55px;
+}
+.image {
+  width: 100%;
+  max-width: 700px;
+}
+
+.text {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.form-one{
+  margin: 5px auto 10px;
+}
+
+footer {
+  text-align: right;
+
+}
+
+
+/*Buttons*/
+
+.submit-btn {
+  background: #dedede;
+  color: #161616;
+  padding: 7px 10px 7px;
+
+  border: solid 2px #101010;
+  border-radius: 20px;
+}
+.submit-btn:hover {
+  background: #bfbfbf;
+  color: #111111;
+}
+
+.btn-hide{
+  display: none;
+}
+
+
+/*Komentáře*/
+.comment-submit {
+  margin-top: 20px;
+  padding: 10px 15px 10px;
+}
+
+.comment-textarea {
+  padding: 10px 10px 0;
+  border:solid 1px #101010;
+  background: #dedede;
+  border-radius: 10px;
+  color: black;
+  min-width: 200px;
+  width: 70%;
+  height: fit-content;
+  min-height: 200px;
+  text-align: start;
+}
+
+
+
+
+.comment-section {
+  padding: 20px 15px 0px;
+}
+
+.comment {
+  padding-top: 20px;
+}
+
+.comment-text {
+  padding: 10px;
+  border:solid 1px #101010;
+  background: #111111;
+  border-radius: 10px;
+  color: #dedede;
+  min-width: 200px;
+  width: 70%;
+  height: fit-content;
+  min-height: 100px;
+  text-align: start;
+}
+
+
+/*# sourceMappingURL=main.css.map */

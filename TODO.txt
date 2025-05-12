@@ -1,0 +1,9 @@
+MANDATORY
+
+1. rozkopírovat navbar z index.php
+2. Předělat výběr z index.php questů aby šly vyhledávat i mapy nebo tradeři - dodělat frontend, zbytek funguje
+
+
+
+OPTIONAL
+

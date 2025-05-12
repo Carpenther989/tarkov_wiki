@@ -1,0 +1,31 @@
+<div class="col-md-3">
+    <div class="card">
+        <img src="img/rar_both_sides.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title" id="anime_name"></h5>
+            <p class="card-text">
+                Počet sezón: <span id="anime_seasons"></span>
+            </p>
+            <p class="card-text">
+                Počet episod: <span id="anime_episodes"></span>
+            </p>
+            <p class="card-text" id="anime_description"></p>
+            <p class="card-text">
+                <button class="btn icon-color-red visually-hidden" type="button" data-delete-anime>
+                    <i class="fa fa-trash" ></i>
+                </button>
+                <button class="btn icon-color-blue visually-hidden" type="button" data-edit-anime>
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    if (getCookie('userName') !== null)
+    {
+        document.querySelector('[data-delete-anime]').forEach(card => card.classList.remove('visually-hidden'));
+        document.querySelector('[data-edit-anime]').classList.remove('visually-hidden');
+    }
+</script>
