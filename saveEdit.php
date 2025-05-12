@@ -2,7 +2,7 @@
 
 if (session_status() === PHP_SESSION_NONE) {
                         session_start();
-                        }
+}
 
 global $conn;
 require_once('dbsConnect.php');
@@ -18,6 +18,7 @@ if(isset($_POST['txt']) and isset($_SESSION['loggedName']) and isset($_POST['qn'
     $stm->bindParam(':qn', $_POST['qn']);
     $stm->execute();
     echo 'něco by se mělo uložit';
+    //docker inspect <container_id> | grep "IPAddress"
 }
 else{
     $err[]='uživatel není přihlášen';
